@@ -1,0 +1,33 @@
+{
+  "name": "ct-pet-drag-recovery",
+  "version": "1.0.0",
+  "description": "自动恢复 Windows 宠物浮窗的拖动和点击，并提供手动恢复入口。",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BaoZiFly-233/codex-tweaks-pet-drag-recovery.git"
+  },
+  "homepage": "https://github.com/BaoZiFly-233/codex-tweaks-pet-drag-recovery",
+  "keywords": ["codex-tweaks-package", "codex-tweaks-node", "windows", "pets"],
+  "scripts": { "test": "node --test tests/*.test.js" },
+  "dependencies": {},
+  "codexTweaks": {
+    "apiVersion": 3,
+    "entrypoints": { "renderer": "src/index.js", "node": "src/node.js" },
+    "priority": 100,
+    "packageDependencies": {},
+    "permissions": {
+      "node": {
+        "reason": "启动隐藏的 Windows PowerShell 辅助进程，读取当前会话中 Codex 的进程身份、窗口属性、桌面可用性和鼠标按钮状态，临时调整唯一匹配的宠物或语音浮窗样式，约 3 秒后恢复。在本包私有数据目录保存自动恢复开关；停用时结束辅助进程。无运行时网络请求。Node 授权授予当前用户级完整代码执行能力。"
+      }
+    },
+    "ui": {
+      "settingsSections": {
+        "apiVersion": 1,
+        "required": false,
+        "items": [{ "id": "pet-drag-recovery", "title": "宠物拖动恢复", "group": "personal", "icon": "personalization", "after": "personalization" }]
+      }
+    }
+  }
+}

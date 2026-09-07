@@ -1,0 +1,12 @@
+.ct-pet-drag-recovery { max-width: 680px; padding: 24px; color: inherit; font: inherit; line-height: 1.7; }
+.ct-pet-drag-recovery h2 { font-size: 1.25rem; font-weight: 600; margin: 0 0 12px; }
+.ct-pet-drag-recovery p { margin: 12px 0; overflow-wrap: anywhere; }
+.ct-pet-drag-recovery-option { display: flex; gap: 10px; align-items: center; margin: 20px 0; }
+.ct-pet-drag-recovery input { width: 18px; height: 18px; accent-color: #4285cf; }
+.ct-pet-drag-recovery button { border: 1px solid currentColor; border-radius: 8px; padding: 7px 16px; color: inherit; background: transparent; cursor: pointer; font: inherit; }
+.ct-pet-drag-recovery button:hover { background: color-mix(in srgb, currentColor 8%, transparent); }
+.ct-pet-drag-recovery button:disabled { opacity: .5; cursor: default; }
+.ct-pet-drag-recovery :focus-visible { outline: 2px solid #4285cf; outline-offset: 3px; }
+.ct-pet-drag-recovery-note, .ct-pet-drag-recovery-detail { opacity: .75; font-size: .9em; }
+.ct-pet-drag-recovery-error { color: #d65a51; }
+@media (max-width: 420px) { .ct-pet-drag-recovery { padding: 12px; } }
