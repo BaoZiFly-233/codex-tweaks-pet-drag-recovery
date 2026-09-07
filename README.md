@@ -64,3 +64,7 @@ powershell.exe -NoLogo -NoProfile -NonInteractive -File native/agent.ps1 -Parent
 ## 许可证
 
 [MIT](LICENSE)。
+
+## 友链
+
+[LINUX DO](https://linux.do)
